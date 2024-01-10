@@ -3,8 +3,10 @@
     public class ShoppingCart
     {
         public string UserName { get; set; }
-        public List<ShopptingCartItems> Items = new List<ShopptingCartItems>();
+ 
+        public List<ShopptingCartItems> Items { get; set; } = new List<ShopptingCartItems>();
         public ShoppingCart() { }
+        
         public ShoppingCart(string name) { UserName = name; }
 
         public decimal TotalPrice
