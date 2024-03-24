@@ -24,7 +24,7 @@ services:
       - postgres_data:/var/lib/postgresql/data/
   pgadmin:
     container_name: pgadmin
-    environment:
+    environment:    
       - PGADMIN_DEFAULT_EMAIL=nasir.islam@gmail.com
       - PGADMIN_DEFAULT_PASSWORD=admin@123
     ports:
